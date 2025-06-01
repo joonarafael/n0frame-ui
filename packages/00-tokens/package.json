@@ -1,0 +1,15 @@
+{
+	"name": "n0frame-tokens",
+	"version": "0.0.1",
+	"type": "module",
+	"files": [
+		"css"
+	],
+	"scripts": {
+		"build": "rimraf css && style-dictionary build --config config.js --silent"
+	},
+	"author": "joonarafael",
+	"devDependencies": {
+		"style-dictionary": "^5.0.0"
+	}
+}
