@@ -9,7 +9,7 @@
 		"css"
 	],
 	"scripts": {
-		"build": "rimraf css && style-dictionary build --config config.js --silent"
+		"build": "rm -rf css && style-dictionary build --config config.js --silent"
 	},
 	"devDependencies": {
 		"style-dictionary": "^5.0.0"

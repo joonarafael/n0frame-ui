@@ -7,8 +7,8 @@
 
 /* eslint-disable */
 
-import { type N0fButtonCustomEvent } from "@n0frame/web-components";
-import { N0fButton as N0fButtonElement, defineCustomElement as defineN0fButton } from "@n0frame/web-components/dist/components/n0f-button.js";
+import { type N0fButtonCustomEvent } from "@n0f/web-components";
+import { N0fButton as N0fButtonElement, defineCustomElement as defineN0fButton } from "@n0f/web-components/dist/components/n0f-button.js";
 import type { EventName, StencilReactComponent } from '@stencil/react-output-target/runtime';
 import { createComponent } from '@stencil/react-output-target/runtime';
 import React from 'react';
