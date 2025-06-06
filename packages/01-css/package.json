@@ -1,0 +1,21 @@
+{
+	"name": "@n0f/css",
+	"version": "0.0.1",
+	"private": true,
+	"author": "joonarafael",
+	"license": "MIT",
+	"type": "module",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "rimraf dist && sass --no-source-map src:dist ",
+		"dev": "vite"
+	},
+	"devDependencies": {
+		"@n0f/tokens": "workspace:^",
+		"rimraf": "^6.0.1",
+		"sass": "^1.89.1",
+		"vite": "^6.3.5"
+	}
+}

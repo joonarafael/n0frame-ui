@@ -1,6 +1,9 @@
 {
-	"name": "n0frame-tokens",
+	"name": "@n0f/tokens",
 	"version": "0.0.1",
+	"private": true,
+	"author": "joonarafael",
+	"license": "MIT",
 	"type": "module",
 	"files": [
 		"css"
@@ -8,7 +11,6 @@
 	"scripts": {
 		"build": "rimraf css && style-dictionary build --config config.js --silent"
 	},
-	"author": "joonarafael",
 	"devDependencies": {
 		"style-dictionary": "^5.0.0"
 	}
