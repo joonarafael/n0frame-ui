@@ -31,12 +31,12 @@ export const config: Config = {
 			serviceWorker: null,
 			copy: [
 				{
-					src: "../node_modules/n0frame-tokens/css/theme.css",
-					dest: "n0frame-tokens/css/theme.css",
+					src: "../node_modules/@n0f/tokens/css/theme.css",
+					dest: "@n0f/tokens/css/theme.css",
 				},
 				{
-					src: "../node_modules/n0frame-css/dist/base.css",
-					dest: "n0frame-css/dist/base.css",
+					src: "../node_modules/@n0f/css/dist/base.css",
+					dest: "@n0f/css/dist/base.css",
 				},
 			],
 		},
