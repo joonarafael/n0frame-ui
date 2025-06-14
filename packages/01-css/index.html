@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -6,27 +6,34 @@
 
 		<title>n0frame Playground</title>
 
-		<link
-			rel="stylesheet"
-			href="./node_modules/@n0f/tokens/css/theme.css"
-		/>
+		<link rel="stylesheet" href="./node_modules/@n0f/tokens/css/theme.css" />
 		<link rel="stylesheet" href="./src/base.scss" />
 		<link rel="stylesheet" href="./src/components.scss" />
 
 		<style>
-			body {
-				height: 100svh;
-				display: grid;
-				place-items: center;
-				gap: 1rem;
+			.component-demo {
+				display: flex;
+				width: 100%;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				gap: 4rem;
+				padding: 4rem;
 			}
 		</style>
 	</head>
 
 	<body>
-		<main>
-			<h1>n0frame Playground</h1>
-			<button class="n0f-button">Button</button>
-		</main>
+		<div class="component-demo">
+			<h1>n0frame CSS Playground</h1>
+			<button class="n0f-button n0f-button--primary">Primary Button</button>
+			<button class="n0f-button n0f-button--secondary">Secondary Button</button>
+			<button class="n0f-button n0f-button--outline">Outline Button</button>
+			<button class="n0f-button n0f-button--ghost">Ghost Button</button>
+			<button class="n0f-button n0f-button--link">Link Button</button>
+			<button class="n0f-button n0f-button--destructive">
+				Destructive Button
+			</button>
+		</div>
 	</body>
 </html>

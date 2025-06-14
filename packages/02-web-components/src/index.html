@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html dir="ltr" lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -16,11 +16,28 @@
 
 		<script type="module" src="/build/n0f-web-components.esm.js"></script>
 		<script nomodule src="/build/n0f-web-components.js"></script>
+
+		<style>
+			.component-demo {
+				display: flex;
+				width: 100%;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				gap: 4rem;
+				padding: 4rem;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="component-demo">
 			<h1>n0frame Button Component</h1>
 			<n0f-button>Primary Button</n0f-button>
+			<n0f-button variant="secondary">Secondary Button</n0f-button>
+			<n0f-button variant="outline">Outline Button</n0f-button>
+			<n0f-button variant="ghost">Ghost Button</n0f-button>
+			<n0f-button variant="link">Link Button</n0f-button>
+			<n0f-button variant="destructive">Destructive Button</n0f-button>
 		</div>
 	</body>
 </html>

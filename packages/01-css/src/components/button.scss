@@ -6,6 +6,7 @@
 	align-items: center;
 	justify-content: center;
 	white-space: nowrap;
+	text-align: center;
 
 	gap: var(--n0f-spacing-2);
 
@@ -13,41 +14,10 @@
 	padding: var(--n0f-button-padding-vertical)
 		var(--n0f-button-padding-horizontal);
 
-	border: var(--n0f-button-border-width) solid
-		var(--n0f-button-primary-border-color);
+	border: var(--n0f-button-border-width) solid;
 	border-radius: var(--n0f-button-border-radius);
 
-	background-color: var(--n0f-button-primary-background-color);
-	color: var(--n0f-button-primary-text-color);
-
 	font-size: var(--n0f-button-font-size);
-	font-weight: var(--n0f-button-font-weight);
-
-	&:hover {
-		background-color: color-mix(
-			in srgb,
-			var(--n0f-button-primary-background-color) 90%,
-			transparent
-		);
-		border-color: color-mix(
-			in srgb,
-			var(--n0f-button-primary-border-color) 90%,
-			transparent
-		);
-	}
-
-	&:active {
-		background-color: color-mix(
-			in srgb,
-			var(--n0f-button-primary-background-color) 90%,
-			transparent
-		);
-		border-color: color-mix(
-			in srgb,
-			var(--n0f-button-primary-border-color) 90%,
-			transparent
-		);
-	}
 
 	&:disabled {
 		opacity: 0.5;
@@ -56,5 +26,208 @@
 
 	@media (prefers-reduced-motion: no-preference) {
 		transition: all 0.3s ease-in-out;
+	}
+
+	// Variants
+
+	// Primary
+	&--primary {
+		background-color: var(--n0f-button-primary-background-color);
+		color: var(--n0f-button-primary-text-color);
+		border-color: var(--n0f-button-primary-border-color);
+		font-weight: var(--n0f-button-primary-font-weight);
+		box-shadow: var(--n0f-button-primary-shadow-default);
+
+		&:hover {
+			background-color: color-mix(
+				in srgb,
+				var(--n0f-button-primary-background-color) 90%,
+				transparent
+			);
+			border-color: color-mix(
+				in srgb,
+				var(--n0f-button-primary-border-color) 90%,
+				transparent
+			);
+			box-shadow: var(--n0f-button-primary-shadow-hover);
+		}
+
+		&:active {
+			background-color: color-mix(
+				in srgb,
+				var(--n0f-button-primary-background-color) 90%,
+				transparent
+			);
+			border-color: color-mix(
+				in srgb,
+				var(--n0f-button-primary-border-color) 90%,
+				transparent
+			);
+			box-shadow: var(--n0f-button-primary-shadow-hover);
+		}
+	}
+
+	// Secondary
+	&--secondary {
+		background-color: var(--n0f-button-secondary-background-color);
+		color: var(--n0f-button-secondary-text-color);
+		border-color: var(--n0f-button-secondary-border-color);
+		font-weight: var(--n0f-button-secondary-font-weight);
+		box-shadow: var(--n0f-button-secondary-shadow-default);
+
+		&:hover {
+			background-color: color-mix(
+				in srgb,
+				var(--n0f-button-secondary-background-color) 90%,
+				transparent
+			);
+			border-color: color-mix(
+				in srgb,
+				var(--n0f-button-secondary-border-color) 90%,
+				transparent
+			);
+			box-shadow: var(--n0f-button-secondary-shadow-hover);
+		}
+
+		&:active {
+			background-color: color-mix(
+				in srgb,
+				var(--n0f-button-secondary-background-color) 90%,
+				transparent
+			);
+			border-color: color-mix(
+				in srgb,
+				var(--n0f-button-secondary-border-color) 90%,
+				transparent
+			);
+			box-shadow: var(--n0f-button-secondary-shadow-hover);
+		}
+	}
+
+	// Outline
+	&--outline {
+		background-color: transparent;
+		color: var(--n0f-button-outline-text-color);
+		border-color: var(--n0f-button-outline-border-color);
+		font-weight: var(--n0f-button-outline-font-weight);
+		box-shadow: var(--n0f-button-outline-shadow-default);
+
+		&:hover {
+			border-color: color-mix(
+				in srgb,
+				var(--n0f-button-outline-border-color) 45%,
+				transparent
+			);
+			color: color-mix(
+				in srgb,
+				var(--n0f-button-outline-text-color) 85%,
+				transparent
+			);
+			box-shadow: var(--n0f-button-outline-shadow-hover);
+		}
+
+		&:active {
+			border-color: color-mix(
+				in srgb,
+				var(--n0f-button-outline-border-color) 45%,
+				transparent
+			);
+			color: color-mix(
+				in srgb,
+				var(--n0f-button-outline-text-color) 85%,
+				transparent
+			);
+			box-shadow: var(--n0f-button-outline-shadow-hover);
+		}
+	}
+
+	// Ghost
+	&--ghost {
+		background-color: transparent;
+		color: var(--n0f-button-ghost-text-color);
+		border-color: transparent;
+		font-weight: var(--n0f-button-ghost-font-weight);
+		box-shadow: var(--n0f-button-ghost-shadow-default);
+
+		&:hover {
+			color: color-mix(
+				in srgb,
+				var(--n0f-button-ghost-text-color) 85%,
+				transparent
+			);
+			box-shadow: var(--n0f-button-ghost-shadow-hover);
+		}
+
+		&:active {
+			color: color-mix(
+				in srgb,
+				var(--n0f-button-ghost-text-color) 85%,
+				transparent
+			);
+			box-shadow: var(--n0f-button-ghost-shadow-hover);
+		}
+	}
+
+	// Link
+	&--link {
+		background-color: transparent;
+		color: var(--n0f-button-link-text-color);
+		border-color: transparent;
+		font-weight: var(--n0f-button-link-font-weight);
+		box-shadow: none;
+
+		&:hover {
+			color: color-mix(
+				in srgb,
+				var(--n0f-button-link-text-color) 85%,
+				transparent
+			);
+			text-decoration: underline;
+		}
+
+		&:active {
+			color: color-mix(
+				in srgb,
+				var(--n0f-button-link-text-color) 85%,
+				transparent
+			);
+		}
+	}
+
+	// Destructive
+	&--destructive {
+		background-color: transparent;
+		color: var(--n0f-button-destructive-text-color);
+		border-color: var(--n0f-button-destructive-border-color);
+		font-weight: var(--n0f-button-destructive-font-weight);
+		box-shadow: var(--n0f-button-destructive-shadow-default);
+
+		&:hover {
+			border-color: color-mix(
+				in srgb,
+				var(--n0f-button-destructive-border-color) 45%,
+				transparent
+			);
+			color: color-mix(
+				in srgb,
+				var(--n0f-button-destructive-text-color) 85%,
+				transparent
+			);
+			box-shadow: var(--n0f-button-destructive-shadow-hover);
+		}
+
+		&:active {
+			border-color: color-mix(
+				in srgb,
+				var(--n0f-button-destructive-border-color) 45%,
+				transparent
+			);
+			color: color-mix(
+				in srgb,
+				var(--n0f-button-destructive-text-color) 85%,
+				transparent
+			);
+			box-shadow: var(--n0f-button-destructive-shadow-hover);
+		}
 	}
 }

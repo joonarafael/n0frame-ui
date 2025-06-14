@@ -1,6 +1,6 @@
-dist/
-www/
-loader/
+dist
+www
+loader
 
 *~
 *.sw[mnpcod]
@@ -12,13 +12,13 @@ log.txt
 *.sublime-project
 *.sublime-workspace
 
-.stencil/
-.idea/
-.vscode/
-.sass-cache/
-.versions/
-node_modules/
-$RECYCLE.BIN/
+.stencil
+.idea
+.vscode
+.sass-cache
+.versions
+node_modules
+$RECYCLE.BIN
 
 .DS_Store
 Thumbs.db

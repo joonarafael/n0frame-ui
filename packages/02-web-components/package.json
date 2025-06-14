@@ -7,8 +7,8 @@
 	"license": "MIT",
 	"exports": {
 		".": {
-			"import": "./dist/n0f/index.esm.js",
-			"require": "./dist/n0f/index.cjs.js"
+			"import": "./dist/n0f-web-components/index.esm.js",
+			"require": "./dist/n0f-web-components/index.cjs.js"
 		},
 		"./dist/components/*.js": {
 			"import": "./dist/components/*.js",
@@ -31,9 +31,7 @@
 	"scripts": {
 		"build": "stencil build",
 		"dev": "stencil build --watch --serve",
-		"generate": "stencil generate",
-		"test": "stencil test --spec --e2e",
-		"test.watch": "stencil test --spec --e2e --watchAll"
+		"generate": "stencil generate"
 	},
 	"devDependencies": {
 		"@n0f/css": "workspace:^",
@@ -41,11 +39,7 @@
 		"@stencil/core": "^4.33.1",
 		"@stencil/react-output-target": "1.0.4",
 		"@stencil/sass": "3.2.1",
-		"@types/jest": "^29.5.14",
-		"@types/node": "^22.15.30",
-		"jest": "^29.7.0",
-		"jest-cli": "^29.7.0",
-		"puppeteer": "^24.10.0"
+		"@types/node": "^22.15.30"
 	},
 	"collection": "dist/collection/collection-manifest.json",
 	"collection:main": "dist/collection/index.js"
